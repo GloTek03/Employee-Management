@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = _25_NguyenHongSon_Q2
+build_property.ProjectDir = D:\FPT_University\Semester7\PRN221\Assignment1\25_NguyenHongSon_Assignment1\25_NguyenHongSon_Q2\

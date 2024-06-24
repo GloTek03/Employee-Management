@@ -1,0 +1,41 @@
+﻿<Window x:Class="_25_NguyenHongSon_Q2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_25_NguyenHongSon_Q2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Star's info Panel -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <Label Content="Star's info" FontWeight="Bold" FontSize="16"/>
+
+            <Label Content="Star Name:"/>
+            <TextBox x:Name="txtStarName"  Margin="0,5"/>
+
+            <Label Content="Date of Birth:"/>
+            <DatePicker x:Name="Dob" Margin="0,5"/>
+
+            <Label Content="Description:"/>
+            <TextBox x:Name="txtDescription" Margin="0,5"/>
+
+            <Label Content="Is Male:"/>
+            <CheckBox x:Name="IsMaleCheckBox" Content="Is male" Margin="0,5"/>
+
+            <Label Content="Nationality:"/>
+            <TextBox x:Name="txtNationality" Margin="0,5"/>
+
+            <Button x:Name="btnAddToList" Content="Add To List" Click="AddToListButton_Click" Margin="0,10"/>
+        </StackPanel>
+
+        <!-- List of Stars -->
+        <ListBox x:Name="StarListBox" Grid.Column="1" Margin="10,10,10,114"/>
+        <Button x:Name="btnSendToServer" Content="Send to Server" Click="SendToServerButton_Click" Margin="24,325,24,65" RenderTransformOrigin="0.534,0.457" Grid.Column="1"/>
+    </Grid>
+</Window>
